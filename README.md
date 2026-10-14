@@ -1,66 +1,134 @@
 # Birthday Wish using Python 🎉
 
+A simple Python project that creates a colorful birthday wish animation in the terminal with optional music.
 
-## A Python Wrapper for Unique Birthday Wishes
+Created by Ms Saim.
 
-Created by *Mr Saim"
+## About
 
-Make your friend's birthday extra special with this Python wrapper that creates unique and personalized birthday wishes. Don't worry about complicated code; I've made it simple for you.
+This project is designed to make birthday wishes more fun and personal. It uses terminal art, colorful text, and a music track to create a special surprise for your friend.
 
-<!--### Preview Video
-Watch the preview video on [YouTube](___) or in the repository.
--->
+The code is intentionally simple so anyone can customize it easily.
 
-### Installation
+## Features
 
-1. **Download and Extract:**
-   Download the wrapper, extract it, and open the folder.
+- Colorful birthday art in the terminal
+- Multiple art templates in the `arts/` folder
+- Custom color codes and text effects
+- Optional background audio using the included MP3 file
+- Easy setup with a single requirements file
 
-2. **Open Terminal:**
-   Open the terminal in the extracted location.
+## Project Structure
 
-3. **Install Requirements:**
-   Run the following command:
-   ```bash
-   pip install -r requirements.txt
+```text
+wish-using-python/
+├── arts/
+│   ├── default.py
+│   ├── plainart.py
+│   └── art_2.py
+├── HappyBirthday.MP3
+├── config.py
+├── help.txt
+├── main.py
+├── README.md
+├── requirements.txt
+├── LICENSE.md
+└── .gitignore
+```
 
-Make sure your laptop is connected to the internet as this may take a while.
+## Installation
 
-**Modify Art Files:**
-Open the 'arts' folder and customize the art files. There is plain art and art with extra decorations. Choose the one you like.
+1. Clone the repository:
 
-**Configure:**
-In the config.py file, change the "art file" to your chosen art "plainart". Follow the color codes to add colors.
-
-**Adjust Speed:**
-Change the speed of the art in config.py by modifying the speed value. A lower value increases the speed of the art.
-
-**Run:**
-Execute the following command:
-
-        python3 main.py
-    
-Watch the magic happen in your terminal!
-
-## Alternative Method
-
-If you prefer using Git:
 ```bash
-git clone https://github.com/inspiretech-code/wish-using-python.git
+git clone https://github.com/sayimarafat-git/wish-using-python.git
 cd wish-using-python
+```
+
+2. Install the required packages:
+
+```bash
 pip install -r requirements.txt
+```
+
+3. Make sure the MP3 file is available in the project folder:
+
+```text
+HappyBirthday.MP3
+```
+
+## Configuration
+
+Open `config.py` to customize the animation:
+
+```python
+artFile = "default"
+speed = 0.0015
+codePrint = False
+playAudio = True
+audio = 'HappyBirthday.MP3'
+```
+
+### Change the art style
+
+The project reads the selected file from the `arts/` folder.
+
+Example values:
+
+```python
+artFile = "default"
+artFile = "plainart"
+artFile = "art_2"
+```
+
+### Customize colors
+
+The `help.txt` file includes:
+
+- custom artistic characters
+- color code shortcuts
+- emoji options
+- ready-made birthday art patterns
+
+You can use those characters and colors inside the art files to make the output look unique.
+
+## Running the Project
+
+Run the script with:
+
+```bash
+python main.py
+```
+
+On some systems, you may need:
+
+```bash
 python3 main.py
 ```
 
-**Disclaimer**
-Check the help.txt file to make any changes in the text of the art. Replace the friend's name and follow the sample alphabet provided.
+## Customization Tips
 
+- Open the `arts/` folder and choose the design you like best.
+- Change `artFile` in `config.py` to switch templates.
+- Edit `speed` to make the animation faster or slower.
+- Use `help.txt` to build your own personalized message.
 
->"Goodbye!" 
+## Notes
 
->Thank you for using this Python Birthday Wish Wrapper.
+- The repository is built for a fun terminal experience.
+- If you want a different birthday message, you can edit the art or text in the art files.
+- Keep the volume high for the best effect while the animation runs.
 
+## Disclaimer
 
-Give me a Star 🌟 if you're impressed with my work!
+Check `help.txt` for sample alphabets, color codes, and birthday art patterns. You can replace names, messages, or symbols to personalize your wishes.
 
+## Credits
 
+Created with love for birthday celebrations.
+
+If you enjoy this project, give it a star on GitHub! 🌟
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE.md` for details.
